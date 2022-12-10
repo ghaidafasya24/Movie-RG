@@ -1,9 +1,16 @@
+.p {
+    /* background-color: rgb(255, 206, 214); */
+    /* background-color: #ffba60; */
+    background: linear-gradient(to left, #fc6767, #ec008c);
+
+}
+
 .nav {
     background-color: rgb(255, 206, 214);
 }
 
 .btn {
-    background-color:transparent;
+    background-color: transparent;
     font-weight: 400;
     text-transform: uppercase;
     border: 2px solid #3bd9d9;
@@ -29,8 +36,10 @@
     transition: .75s;
 }
 
-.btn > a {
+.btn>a {
     text-decoration: none;
+    cursor: pointer;
+    padding: 1em;
     color: black;
 }
 
@@ -40,28 +49,69 @@
     background-size: cover;
     background-position: center;
     height: 92vh;
-    text-shadow: 6px 0px 2px rgba(0,0,0,0.6);
+    text-shadow: 6px 0px 2px rgba(0, 0, 0, 0.6);
     font-family: 'Fira Code';
-    
+
 }
 
 
 .home {
     height: auto;
+    width: 100%;
 }
 
-.card > img {
+.home-content {
+    overflow-x: auto;
+}
+
+.card>img {
     padding: 9px;
     margin: auto;
     aspect-ratio: 9/16;
 }
 
+.content-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.deskripsi-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 50%;   
+    text-align: center;
+    padding: 2em;
+}
+
+.gambar-deskripsi-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+}
+
+.kedua {
+    order: 2;
+}
+
+.ketiga {
+    order: 1;
+}
+
+
+
+.gambar-deskripsi-1 > img {
+    width: 50%;
+}
 
 /* FORM */
 
 .login {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +128,7 @@
     color: #fff;
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 0 1px 1rem rgb(8, 8, 136);
+    box-shadow: 0 1px 1rem rgb(0, 0, 0);
     isolation: isolate;
     margin: auto;
 }
@@ -108,6 +158,10 @@
     background-color: inherit;
 }
 
+.daftar {
+    height: 10rem;
+}
+
 .form-input {
     position: relative;
     display: flex;
@@ -135,7 +189,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: rgb(0, 0,0, .1);
+    background-color: rgb(0, 0, 0, .1);
     width: 100%;
     height: 1px;
 }
@@ -172,10 +226,128 @@
     background: linear-gradient(to right, #fc6767, #ec008c);
 }
 
-@media screen and (max-width: 650px) {
-   .sign-up {
-    width: 80%;
-   }
+.regis {
+    color: black;
 }
 
+footer {
+    background-color: pink;
+    width: 100%;
+    height: 155px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+
+.kontak > img {
+    padding-top: 1em;
+    padding-left: 2em;
+    width: 100px;
+}
+
+.kontak > p {
+    padding-left: 2em;
+    font-size: 15px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+
+.icon > a {
+    padding-right: 1em;
+    font-size: 20px;
+    color: black;
+}
+
+.help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.w {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+.copy > p {
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+
+
+
+
 /* FORM END */
+@media screen and (max-width: 650px) {
+    .sign-up {
+        width: 80%;
+    }
+
+    .content-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deskripsi-1 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .gambar-deskripsi-1 {
+        width: 100%;
+    }
+
+    .kedua {
+        order: 1;
+    }
+
+    .ketiga {
+        order: 2;
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+    .kontak {
+        width: 100%;
+    }
+
+    .kontak > img {
+        width: 20%;
+    }
+
+    .list {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
