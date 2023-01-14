@@ -45,7 +45,7 @@
 
 
 .intro {
-    background-image: url('/assets/images/bg/bghome.jpg');
+    background-image: url('../images/bg/bghome.jpg');
     background-size: cover;
     background-position: center;
     height: 92vh;
